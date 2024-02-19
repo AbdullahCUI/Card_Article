@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECF2F8;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.main-div {
+  background-color: #fff;
+  width: 730px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.second-div {
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.image-div {
+  width: 285px;
+  object-fit: cover;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.article-heading {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.same-propertie {
+  font-size: 13px;
+}
+
+.footer-div {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #ECF2F8;
+}
+
+#share-icon {
+  max-width: 100%;
+}
+
+.same-width {
+  width: 100%;
+}
+
+.second-div-para {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  color: #6E8098;
+}
+
+.same-color {
+  color: #48556A;
+  font-weight: bold;
+}
+
+.combine-dive {
+  display: flex;
+  gap: 16px;
+}
+
+.userImg {
+  display: flex;
+  border: 1px solid black;
+  background-color: #6785adf4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.profile-image {
+  object-fit: cover;
+}
+
+@media (max-width:720px) {
+  .main-div{
+    width: 327px;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .image-div {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  .second-div {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .footer-div,.image-div,.profile-image {
+    width: 100%;
+  }
+
+  .second-div {
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .article-heading {
+    width: 263px;
+    font-size: 16px;
+  }
+
+  .second-div-para {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
